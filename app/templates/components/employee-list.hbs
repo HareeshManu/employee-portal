@@ -1,0 +1,21 @@
+<div class="container">        
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Employee Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each employees as |employee|}}
+        <tr class="listing text-left">
+          {{!-- <td>{{employee.userid}}</td> --}} 
+          <td>{{#link-to "home.details" employee  fullName="manu"}}{{employee.userid}}{{/link-to}}</td>
+          <td>{{employee.preferredfullname}}</td>
+          <td>{{employee.emailaddress}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

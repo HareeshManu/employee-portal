@@ -1,0 +1,8 @@
+<div class="text-right">
+  {{#employee-filter
+   filter=(action 'filterByName')
+   as |filteredResults|}}
+  {{employee-list employees=filteredResults}}
+  {{/employee-filter}}
+</div>
+{{outlet}}

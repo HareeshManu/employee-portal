@@ -1,0 +1,26 @@
+<div class="container">
+  <form {{action "saveEmployee" on="submit"}}>       
+      <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>User ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Full Name</th>
+        <th>Age</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="listing" >
+          <td>{{model.userid}}</td>
+          <td>{{input valueBinding="model.firstname"}}</td>
+          <td>{{input valueBinding="model.lastname"}}</td> 
+          <td>{{concat model.firstname ' ' model.lastname}}</td>
+          <td>{{input valueBinding="model.age"}}</td>
+          <td> <button class="btn btn-primary btn-sm">Submit</button></td>
+          <td><button {{action "cancelSave"}}  class="btn btn-primary btn-sm">Cancel</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </form>
+</div>

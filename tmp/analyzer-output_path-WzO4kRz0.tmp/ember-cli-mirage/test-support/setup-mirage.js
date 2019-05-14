@@ -1,0 +1,1 @@
+/Volumes/A-7117/EmberTut/employee-portal/tmp/analyzer-input_base_path-4QDyxjrH.tmp/ember-cli-mirage/test-support/setup-mirage.js
